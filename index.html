@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <button onclick="myFunction()" class="DarkmodeBtn">Toggle dark mode</button>
+    <header>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+              <button class="dropbtn">Services</button>
+
+
+              <div class="dropdown-content">
+                <a href="#">Find</a>
+                <a href="#">The</a>
+                <a href="#">One Piece</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="Phone-header">
+            <section class="header-title-line">
+              <h1>nosleguma darbs</h1>
+              <button class="openbtn" onclick="openNav()">&#9776;</button>
+            </section>
+          </div>
+    </header>
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/about">About</a>
+      <a href="/Services">Services</a>
+      <a href="/Clients">Clients</a>
+      <a href="/Contact">Contact</a>
+    </div>
+    <main>
+        <h1>DP3-4 Nosleguma darbs</h1>
+        <h2>Gives information about different countries.</h2>
+        <p>The information that the website gives could be like
+
+            The timezone the weather used curenncy Amount of people living there Most used Languages etc.
+            
+            Used Programming languages:
+            
+            Backend: PHP
+            Frontend: javascript, HTML, CSS
+            Database: MySQL
+            The goal of the website is:
+            
+            to give general information about the country you are looking for all in one place.
+            Have a place to leave comments about your experiances with the place for others to see
+            More features to be determined -
+            The Website will achive those goals using API to get that information realtime</p>
+            <img class="country-map center" src="https://img.jagranjosh.com/images/2023/February/622023/total-countries-in-the-world.webp" alt="country" width="45%">
+
+              <!-- The First Modal -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close1">&times;</span>
+    <p>Texas, the second-largest state in the U.S., 
+      is a land of diverse landscapes and rich cultural heritage. 
+      From the vast plains and rolling hills of the Hill Country to the arid deserts of West Texas and the lush coastal regions along the Gulf of Mexico, 
+      the state's geography is as varied as its population.</p>
+  </div>
+</div>
+<!-- The Second Modal -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close2">&times;</span>
+    <p>日本は、古代の伝統と最先端の現代性が見事に融合した島国です。
+      北海道、本州、九州、四国の4つの主要な島と、数千の小さな島から成り立っており、日本は雪をかぶった山々や穏やかな田んぼ、賑やかな都市中心部など、様々な風景を提供しています。</p>
+  </div>
+</div>
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" id="close3">&times;</span>
+    <p>(Not a France glazer ) France, renowned for its rich history and cultural influence, 
+      is a country that captivates with its stunning landscapes, exquisite cuisine, and iconic landmarks. 
+      From the romantic streets of Paris, home to the Eiffel Tower and the Louvre Museum, to the picturesque villages of Provence and the vineyards of Bordeaux, 
+      France offers a diverse array of experiences.</p>
+  </div>
+</div>
+            
+            </div>
+              <article>
+                <div class="card-container">
+                  <div class="card">
+                    <img src="https://th.bing.com/th/id/R.b6fd255197326b0b3b68da897081b3ef?rik=xTLpYaOZbWaSqg&pid=ImgRaw&r=0" alt="Texas">
+                    <h3>Texas</h3>
+                    <p>This is texas YEE HAW!!!</p>
+                    <button id="btn1">more info</button>
+                  </div>
+                  <div class="card">
+                    <img src="https://awayandfar.com/wp-content/uploads/2019/01/Kyoto.jpg" alt="Japan">
+                    <h3>Japan</h3>
+                    <p>黒人が嫌い</p>
+                    <button id="btn2">more info</button>
+                  </div>
+                  <div class="card">
+                    <img src="https://1.bp.blogspot.com/-XCDP_qtL724/UQgMmYegCuI/AAAAAAAAjdE/hmq_X36t-Hs/s1600/202_1la_tour_eiffel___paris__france.jpg" alt="France">
+                    <h3>France</h3>
+                    <p>I HATE FRENCH PEOPLE RAHHHH!!!</p>
+                    <button id="btn3">more info</button>
+                  </div>
+              </div>
+              </div>
+              
+              </article>
+
+            <footer>
+                <div class="footer-content">
+                  <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>We are a company dedicated to providing the best services.</p>
+                  </div>
+                  <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  &copy; 2024 YourCompany | Designed by You
+                </div>
+              </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
