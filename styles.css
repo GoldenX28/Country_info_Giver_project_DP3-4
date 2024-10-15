@@ -6,7 +6,7 @@
 
 body {
     
-    background-color: white;
+    background-color: rgb(252, 219, 206);
     color: rgb(10, 10, 10);
     font-size: 18px;
   }
@@ -20,7 +20,7 @@ body {
   }
   
   .dark-mode { 
-    background-color: black;
+    background-color: rgb(26, 24, 24);
     color: white;
   }
   .dark-mode .card h3{
@@ -28,7 +28,8 @@ body {
   }
 
   .dark-mode header {
-    background-image: linear-gradient(#153318, #081d09); 
+    background-image: linear-gradient(#112b13, #081d09); 
+    border: #111;
   }
   .DarkmodeBtn {
     width: 50px;
@@ -222,6 +223,7 @@ header {
 
 }
 footer {
+  padding-top: 5px;
     background: #333;
     color: #fff;
     padding: 20px 0;
@@ -244,11 +246,13 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    padding-bottom: 10px;
+    
 }
 .card{
     flex: 1;
-
-    border: solid 1px;
+    padding-bottom: 3px;
+    border: solid 2px;
     border-radius: 10px;
     border-color: #262727;
     overflow: hidden;
@@ -285,9 +289,11 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    
 }
 .card button:hover {
     background-color: #45a049;
+    animation: move_button 0.25s linear infinite;
 }
 /* The Modal (background) */
 .modal {
@@ -354,4 +360,18 @@ footer {
   .topnav{
     display: none;
   }
+}
+
+/* @keyframes move_button{
+    0% {right: 0px;}
+    25%{right: 10px;}
+    50%{left: 20px;}
+    75%{right: 20px;}
+    100%{left: 10px;}
+} */
+
+@keyframes move_button{
+  0% {transform: translateX(-3px);}
+  50%{transform: translateX(6px);}
+  100% {transform: translateX(-3px);}
 }
